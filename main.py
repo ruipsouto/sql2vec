@@ -32,6 +32,8 @@ def main(args):
     else:
         print("Invalid arguments. Run 'python main.py --help'")
 
+    db.close()
+
 if __name__ == '__main__':
     args = get_args()
     main(args)
